@@ -1,0 +1,13 @@
+{
+	"id": "OurNewWorld",
+	"name": "Our New World Face Cards",
+	"author": ["NerdiestAlpaca"],
+	"description": "A full set of unique face cards for each suit featuring characters from the upcoming webcomic, Our New World!",
+	"prefix": "OurNewWorld",
+	"badge_colour": "C04190",
+	"dependencies": [
+		"Steamodded (>=1.0.0~ALPHA-1404b)"
+	],
+	"main_file": "OurNewWorld.lua",
+	"version": "1.0.0"
+}
