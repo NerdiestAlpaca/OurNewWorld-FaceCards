@@ -1,50 +1,117 @@
-local suits = {
-  Hearts = SMODS.Atlas {
-    key = "collab_onw_hearts",
-    path = "collab_ONW_hearts_1.png",
-    px = 71,
-    py = 95,
-  },
-  Spades = SMODS.Atlas {
-    key = "collab_onw_spades",
-    path = "collab_ONW_spades_1.png",
-    px = 71,
-    py = 95,
-  },
-  Diamonds = SMODS.Atlas {
-    key = "collab_onw_diamonds",
-    path = "collab_ONW_diamonds_1.png",
-    px = 71,
-    py = 95,
-  },
-  Clubs = SMODS.Atlas {
-    key = "collab_onw_clubs",
-    path = "collab_ONW_clubs_1.png",
-    px = 71,
-    py = 95,
-  },
+
+SMODS.Atlas {
+  key = "collab_onw_hearts_1",
+  path = "collab_ONW_hearts_1.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
+}
+SMODS.Atlas {
+  key = "collab_onw_spades_1",
+  path = "collab_ONW_spades_1.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
+}
+SMODS.Atlas {
+  key = "collab_onw_diamonds_1",
+  path = "collab_ONW_diamonds_1.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
+}
+SMODS.Atlas {
+  key = "collab_onw_clubs_1",
+  path = "collab_ONW_clubs_1.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
 }
 
 SMODS.Atlas {
-  key = "modicon",
-  path = "modicon.png",
-  px = 32,
-  py = 32
+  key = "collab_onw_hearts_2",
+  path = "collab_ONW_hearts_2.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
+}
+SMODS.Atlas {
+  key = "collab_onw_spades_2",
+  path = "collab_ONW_spades_2.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
+}
+SMODS.Atlas {
+  key = "collab_onw_diamonds_2",
+  path = "collab_ONW_diamonds_2.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
+}
+SMODS.Atlas {
+  key = "collab_onw_clubs_2",
+  path = "collab_ONW_clubs_2.png",
+  px = 71,
+  py = 95,
+  atlas_table = 'ASSET_ATLAS'
 }
 
-for suit, atlas in pairs(suits) do
-  SMODS.DeckSkin {
-    key = atlas.key,
-    suit = suit,
-    loc_txt = "Our New World",
-    palettes = {
-      {
-        key = "lc",
-        ranks = {'Jack', 'Queen', "King"},
-        display_ranks = {"King", "Queen", "Jack"},
-        atlas = atlas.key,
-        pos_style = 'collab'
-      }
-    }
+SMODS.Atlas {
+key = "modicon",
+path = "modicon.png",
+px = 32,
+py = 32
+}
+
+SMODS.DeckSkin{
+  key = "collab_onw_spades",
+  suit = "Spades",
+  ranks =  {"Jack", "Queen", "King"},
+  display_ranks = {"King", "Queen", "Jack"},
+  lc_atlas = "collab_onw_spades_1",
+  hc_atlas = "collab_onw_spades_2",
+  loc_txt = {
+    ["en-us"] = "Our New World"
+  },
+  posStyle = "collab"
   }
-end
+
+SMODS.DeckSkin{
+  key = "collab_onw_hearts",
+  suit = "Hearts",
+  ranks =  {"Jack", "Queen", "King"},
+  display_ranks = {"King", "Queen", "Jack"},
+  lc_atlas = "collab_onw_hearts_1",
+  hc_atlas = "collab_onw_hearts_2",
+  loc_txt = {
+    ["en-us"] = "Our New World"
+  },
+  posStyle = "collab"
+  }
+  
+SMODS.DeckSkin{
+  key = "collab_onw_clubs",
+  suit = "Clubs",
+  ranks =  {"Jack", "Queen", "King"},
+  display_ranks = {"King", "Queen", "Jack"},
+  lc_atlas = "collab_onw_clubs_1",
+  hc_atlas = "collab_onw_clubs_2",
+  loc_txt = {
+    ["en-us"] = "Our New World"
+  },
+  posStyle = "collab"
+  }
+
+SMODS.DeckSkin{
+  key = "collab_onw_diamonds",
+  suit = "Diamonds",
+  ranks =  {"Jack", "Queen", "King"},
+  display_ranks = {"King", "Queen", "Jack"},
+  lc_atlas = "collab_onw_diamonds_1",
+  hc_atlas = "collab_onw_diamonds_2",
+  loc_txt = {
+    ["en-us"] = "Our New World"
+  },
+  posStyle = "collab"
+  }
